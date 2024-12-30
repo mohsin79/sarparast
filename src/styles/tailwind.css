@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /*------Color variables------*/
+    --black_900: #000000;
+    --blue_400: #4badef;
+    --blue_gray_100: #d1d1d1;
+    --blue_gray_900: #242439;
+    --gray_100: #f2f2f2;
+    --gray_200: #ececec;
+    --gray_50: #f9fafc;
+    --gray_700: #686868;
+    --gray_700_33: #68686833;
+    --gray_900: #0d2234;
+    --gray_900_01: #0a0f1b;
+    --gray_900_02: #1e1e1e;
+    --gray_900_03: #320e00;
+    --green_500: #3ab54e;
+    --green_a700: #00aa2f;
+    --indigo_300: #7090c0;
+    --indigo_900_26: #0f105626;
+    --indigo_a200: #5d5fef;
+    --light_blue_100: #b9ebff;
+    --light_blue_100_00: #b9ebff00;
+    --orange_300: #f4b941;
+    --pink_50: #fcddec;
+    --pink_600: #d0297f;
+    --pink_a100: #f178b6;
+    --red_600: #ee2737;
+    --red_600_01: #e6284a;
+    --teal_a700: #08c3a8;
+    --white_a700: #ffffff;
+    /*------Shadow variables------*/
+    --shadow-xs: 0 4px 16px 5px #0f105626;
+    /*------Border radius variables------*/
+    --radius-xs: 1px;
+    --radius-sm: 8px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+
+    /*------Spacing variables------*/
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-1g: 22px;
+    --space-xl: 24px;
+    --space-2xl: 30px;
+    --space-3xl: 32px;
+    --space-4xl: 40px;
+    --space-5xl: 48px;
+    --space-6xl: 54px;
+    --space-7xl: 56px;
+    --space-8xl: 80px;
+  }
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+  }
+
+  /* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+  [type="text"]:focus,
+  [type="email"]:focus,
+  [type="url"]:focus,
+  [type="password"]:focus,
+  [type="number"]:focus,
+  [type="date"]:focus,
+  [type="search"]:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color: transparent;
+    border-color: transparent;
+  }
+  [type="radio"]:focus,
+  [type="checkbox"]:focus {
+    --tw-ring-color: transparent;
+  }
+}
+@layer components {
+  /*  
+Container CSS  
+*/
+  .container-xs {
+    @apply w-full mx-auto max-w-[1160px];
+  }
+}
